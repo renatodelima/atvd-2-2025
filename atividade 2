@@ -1,0 +1,12 @@
+function verificarLetra(c) {
+    const regex = /^[a-zA-Z]$/;
+    return regex.test(c);
+}
+
+let letra = prompt("Digite uma letra: ");
+if (verificarLetra(letra)) {
+    console.log("É uma letra do alfabeto.");
+} else {
+    console.log("Não é uma letra do alfabeto.");
+}
+
